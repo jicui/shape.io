@@ -1,0 +1,119 @@
+
+<!DOCTYPE HTML>
+<HTML LANG="EN">
+  <HEAD>
+    <META CHARSET="UTF-8">
+    <TITLE>SHAPE IO, FROM STUBHUB</TITLE>
+    <META NAME="VIEWPORT" CONTENT="WIDTH=DEVICE-WIDTH, INITIAL-SCALE=1.0">
+    <META NAME="DESCRIPTION" CONTENT="">
+    <META NAME="AUTHOR" CONTENT="">
+
+    <!-- LE STYLES -->
+    <LINK HREF="CSS/BOOTSTRAP.MIN.CSS" REL="STYLESHEET">
+    <LINK REL="STYLESHEET" HREF="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/ember-1.0.0-rc.7.jss"></script>
+    <script src="js/handlebars-1.0.0.js"></script>
+     <script>
+      $(function() {
+        $( "#accordion" ).accordion({ collapsible: true, heightStyle: "fill"});
+       
+      });
+    </script>
+    <style>
+    body {
+    font-size:12px
+    }
+    body h4 {
+    font-size:14px
+    }
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.bootcss.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Shape IO</a>
+          <div class="nav-collapse collapse">
+            <form class="navbar-form">
+              <input class="search" type="text" style="width:500px" placeholder="Search API Here">
+              <button type="submit" class="btn">explore</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+	<div class="row">
+		<div class="span12">
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12" id="accordion">
+			 <h3>/fulfillment/pdf/v1/listing</h3>
+        <div id="tabs">
+            <h4>Api Specs</h4>
+            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+            <div id="request-error"></div>
+            <h4>Http Method</h4>
+            <div class="row">
+               <div class="span2">
+                  <span class="add-on">Method:</span>
+                  <select style="width:100px"><option id="get">GET</option><option id="post">POST</option><option id="put">PUT</option><option id="delete">DELETE</option></select>
+               </div>
+                <div class="span8">
+                  <span class="add-on">URL:</span>
+                  <input type="text" style="width:500px" placeholder="API URL"><button class="btn btn-danger" type="button" style="margin-bottom:10px;margin-left:20px">Send</button>
+               </div>
+            </div>
+               <hr>
+            <div class="row">
+              <div class="span3">
+                <h4>Http Head</h4>
+                <div>
+                  <span class="add-on">Method:</span>
+                  <select style="width:100px"><option id="get">GET</option><option id="post">POST</option><option id="put">PUT</option><option id="delete">DELETE</option></select>
+                </div>
+              </div>
+            </div>
+               <hr>
+             <h4>Body</h4>
+             <div class="row">
+              <div class="span10">
+                <textarea rows="3" cols="10"></textarea>
+              </div>
+            </div>
+        
+        </div>
+
+<h3>/fulfillment/shipping/v1/tracking</h3>
+<div style="margin-bottom: 10px;" id="request-container">
+    <div id="request-error"></div>
+    <div style="margin-bottom:0px;" class="well">
+      <h4 style="margin-left: 6px;">Http Request</h4>
+    </div>
+    <div style="margin-bottom:0px;" class="well">
+      <h4 style="margin-left: 6px;">Http Header</h4>
+    </div>
+    <div style="margin-bottom:0px;" class="well">
+      <h4 style="margin-left: 6px;">Body</h4>
+    </div>
+</div>
+	</div>
+</div>
+  </body>
+</html>
